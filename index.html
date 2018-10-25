@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="coffee.js"></script>
+    <script src="myFunctions.js"></script>
     <link rel="stylesheet" type="text/css" href="all.css">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +42,7 @@ body, html {
 
 #Home {background-color: tomato;}
 #News {background-color: green;}
-#Contact {background-color: blue;}
+#Contact {background-color: steelblue;}
 #About {background-color: orange;}
 </style>
 </head>
@@ -51,13 +52,16 @@ body, html {
 <button class="tablink" onclick="openPage('Contact', this, 'steelblue')">Contact</button>
 <button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 </body>
+
 <div id="Home" class="tabcontent">
-  <h3>All</h3>
+  <h3>Recipe Categories</h3>
    <div>
       <button class="pie" onclick="pie()">Pie</button>
       <button class="pasta" onclick="pasta()">Pasta</button>
       <button class="sandwiches" onclick="sandwiches()">Sandwiches</button>
     </div>
+</div>
+
  <div id="News" class="tabcontent">
   <h3>News</h3>
   <p>Some news this fine day!</p> 
@@ -74,21 +78,8 @@ body, html {
 </div>
 
 <script>
-function openPage(pageName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(pageName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-
-}
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
+
 </html>
