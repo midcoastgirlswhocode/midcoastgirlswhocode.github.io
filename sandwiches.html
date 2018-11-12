@@ -1,58 +1,66 @@
 <html>
-<head>
-    <script type="text/javascript" src=myFunctions.js></script>
-    <link rel="stylesheet" type="text/css" href="sandwiches.css">
-    <link rel="stylesheet" type="text/css" href="recipes.css">
-    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+  <head>
+    <script type="text/javascript" src="myFunctions.js"></script>
+    <link rel="stylesheet" type="text/css" href="sandwiches.css" />
+    <link rel="stylesheet" type="text/css" href="recipes.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent Pro"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2>Sandwich</h2>
+    <p>Click on the buttons to view recipies</p>
 
-<h2>Sandwiches</h2>
-<p>Click on the buttons to view recipies</p>
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'hamandcheese')"
+        id="defaultOpen"
+      >
+        Ham and Cheese
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'pbandj')">
+        Peanut butter and Jelly
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'phillycheese')">
+        Philly Cheese Steak
+      </button>
+    </div>
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'hamandcheese')" id="defaultOpen">Ham and Cheese</button>
-  <button class="tablinks" onclick="openTab(event, 'pbandj')">Peanut butter and Jelly</button>
-  <button class="tablinks" onclick="openTab(event, 'phillycheese')">Philly Cheese Steak </button>
-</div>
+    <div id="hamandcheese" class="tabcontent">
+      <h3>Ham and Cheese</h3>
+      <p>
+        1/4 cup (2 ounces) tub light cream cheese. <br />1 tablespoon chopped
+        fresh basil. <br />1 teaspoon Dijon mustard. <br />1/4 teaspoon freshly
+        ground black pepper. <br />8 (1-ounce) slices whole wheat bread. <br />4
+        ounces low-fat deli ham. <br />8 (1/4-inch-thick) slices tomato (about 1
+        large)
+      </p>
+    </div>
 
-<div id="hamandcheese" class="tabcontent">
-  <h3>Ham and Cheese</h3>
-  <p> 1/4 cup (2 ounces) tub light cream cheese.
-    <br>1 tablespoon chopped fresh basil.
-    <br>1 teaspoon Dijon mustard.
-    <br>1/4 teaspoon freshly ground black pepper.
-    <br>8 (1-ounce) slices whole wheat bread.
-    <br>4 ounces low-fat deli ham.
-    <br>8 (1/4-inch-thick) slices tomato (about 1 large)
-</p>
-</div>
+    <div id="pbandj" class="tabcontent">
+      <h3>Peanut Butter and Jelly</h3>
+      <p>
+        2 slices whole wheat bread <br />1 teaspoon butter <br />
+        tablespoon peanut butter <br />2 teaspoons strawberry jam
+      </p>
+    </div>
 
-<div id="pbandj" class="tabcontent">
-  <h3>Peanut Butter and Jelly</h3>
-  <p>2 slices whole wheat bread
-    <br>1 teaspoon butter
-    <br> tablespoon peanut butter
-    <br>2 teaspoons strawberry jam
+    <div id="phillycheese" class="tabcontent">
+      <h3>Philly Cheese Steak</h3>
+      <p>
+        Extra-virgin olive oil, divided. <br />2 green peppers, thinly sliced.
+        <br />2 red peppers, thinly sliced. <br />1 large yellow onion, sliced.
+        <br />1 1/2 lb. sirloin steak, thinly sliced. <br />10 slices provolone.
+        <br />4 hoagie rolls.
+      </p>
+    </div>
 
-</div>
-
-<div id="phillycheese" class="tabcontent">
-  <h3>Philly Cheese Steak</h3>
-  <p>Extra-virgin olive oil, divided.
-    <br>2 green peppers, thinly sliced.
-    <br>2 red peppers, thinly sliced.
-    <br>1 large yellow onion, sliced.
-    <br>1 1/2 lb. sirloin steak, thinly sliced.
-    <br>10 slices provolone.
-    <br>4 hoagie rolls.
-</div>
-
-<script>
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-</script>
-
-</body>
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
 </html>
