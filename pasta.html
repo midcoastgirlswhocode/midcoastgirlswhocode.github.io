@@ -1,8 +1,8 @@
 <html>
 <head>
-<script src="pasta.js"></script>
-    <link rel="stylesheet" type="text/css" href="pasta.css">
-    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+  <script type="text/javascript" src=myFunctions.js></script>
+  <link rel="stylesheet" type="text/css" href="pasta.css">
+  <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -67,36 +67,45 @@ body {font-family: "Advent Pro", sans-serif;}
 
 <div id="Baked Ziti" class="tabcontent">
   <h3>Baked Ziti</h3>
-  <p> 1)Preheat the oven to 350 degrees F .<br> 2) Butter a 9x13 inch baking dish. <br> 3) Layer as follows: <br> 1/2 of the ziti <br> Provolone cheese<br> sour cream<br> 1/2 sauce mixture <br> remaining ziti<br> mozzarella cheese <br>Remaining sauce mixture<br> Top with grated Parmesan cheese.</p>
+  <p> 1)Preheat the oven to 350 degrees F .
+    <br> 2) Butter a 9x13 inch baking dish.
+    <br> 3) Layer as follows:
+    <br> 1/2 of the ziti
+    <br> Provolone cheese
+    <br> sour cream
+    <br> 1/2 sauce mixture
+    <br> remaining ziti
+    <br> mozzarella cheese
+    <br>Remaining sauce mixture
+    <br> Top with grated Parmesan cheese.</p>
 </div>
 
 <div id="Lasagna" class="tabcontent">
   <h3>Lasagna</h3>
-  <p>1 pound lean ground beef.<br> 4 cups tomato-basil pasta sauce.<br>6 uncooked lasagna noodles.<br>1 (15-ounce) container ricotta cheese.<br>2 1/2 cups (10 ounces) shredded mozzarella cheese.<br>1/4 cup hot water.</p> 
+  <p>1 pound lean ground beef.
+    <br> 4 cups tomato-basil pasta sauce.
+    <br>6 uncooked lasagna noodles.
+    <br>1 (15-ounce) container ricotta cheese.
+    <br>2 1/2 cups (10 ounces) shredded mozzarella cheese.
+    <br>1/4 cup hot water.</p>
 </div>
 
 <div id="Macaroni & Cheese" class="tabcontent">
   <h3>Macaroni & cheese</h3>
-  <p>1 (8-oz.) package elbow macaroni.<br>2 tablespoons butter.<br>2 tablespoons all-purpose flour.<br>2 cups milk.<br>1/2 teaspoon salt.<br>1/2 teaspoon fresh ground black pepper.<br>1/4 teaspoon ground red pepper.<br>1 (8-oz.) block sharp Cheddar cheese, shredded and divided.</p>
+  <p>1 (8-oz.) package elbow macaroni.
+    <br>2 tablespoons butter.
+    <br>2 tablespoons all-purpose flour.
+    <br>2 cups milk.
+    <br>1/2 teaspoon salt.
+    <br>1/2 teaspoon fresh ground black pepper.
+    <br>1/4 teaspoon ground red pepper.
+    <br>1 (8-oz.) block sharp Cheddar cheese, shredded and divided.
+  </p>
 </div>
-<script>
-function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
 
-// Get the element with id="defaultOpen" and click on it
+<script>
 document.getElementById("defaultOpen").click();
 </script>
-     
+
 </body>
-</html> 
+</html>

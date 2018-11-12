@@ -1,5 +1,6 @@
 <html>
 <head>
+    <script type="text/javascript" src=myFunctions.js></script>
     <link rel="stylesheet" type="text/css" href="sandwiches.css">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,44 +60,46 @@ body {font-family: "Advent Pro", sans-serif;}
 <p>Click on the buttons to view recipies</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Ham and Cheese</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Peanut butter and Jelly</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Philly Cheese Steak </button>
+  <button class="tablinks" onclick="openTab(event, 'hamandcheese')" id="defaultOpen">Ham and Cheese</button>
+  <button class="tablinks" onclick="openTab(event, 'pbandj')">Peanut butter and Jelly</button>
+  <button class="tablinks" onclick="openTab(event, 'phillycheese')">Philly Cheese Steak </button>
 </div>
 
-<div id="London" class="tabcontent">
+<div id="hamandcheese" class="tabcontent">
   <h3>Ham and Cheese</h3>
-  <p> 1/4 cup (2 ounces) tub light cream cheese.<br>1 tablespoon chopped fresh basil.<br>1 teaspoon Dijon mustard.<br>1/4 teaspoon freshly ground black pepper.<br>8 (1-ounce) slices whole wheat bread.<br>4 ounces low-fat deli ham.<br>8 (1/4-inch-thick) slices tomato (about 1 large)
+  <p> 1/4 cup (2 ounces) tub light cream cheese.
+    <br>1 tablespoon chopped fresh basil.
+    <br>1 teaspoon Dijon mustard.
+    <br>1/4 teaspoon freshly ground black pepper.
+    <br>8 (1-ounce) slices whole wheat bread.
+    <br>4 ounces low-fat deli ham.
+    <br>8 (1/4-inch-thick) slices tomato (about 1 large)
 </p>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="pbandj" class="tabcontent">
   <h3>Peanut Butter and Jelly</h3>
-  <p>2 slices whole wheat bread <br>1 teaspoon butter<br> tablespoon peanut butter <br>2 teaspoons strawberry jam 
+  <p>2 slices whole wheat bread
+    <br>1 teaspoon butter
+    <br> tablespoon peanut butter
+    <br>2 teaspoons strawberry jam
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="phillycheese" class="tabcontent">
   <h3>Philly Cheese Steak</h3>
-  <p>Extra-virgin olive oil, divided.<br>2 green peppers, thinly sliced.<br>2 red peppers, thinly sliced.<br>1 large yellow onion, sliced.<br>1 1/2 lb. sirloin steak, thinly sliced.<br>10 slices provolone.<br>4 hoagie rolls.
+  <p>Extra-virgin olive oil, divided.
+    <br>2 green peppers, thinly sliced.
+    <br>2 red peppers, thinly sliced.
+    <br>1 large yellow onion, sliced.
+    <br>1 1/2 lb. sirloin steak, thinly sliced.
+    <br>10 slices provolone.
+    <br>4 hoagie rolls.
 </div>
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
 
+<script>
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
-     
+
 </body>
-</html> 
+</html>
