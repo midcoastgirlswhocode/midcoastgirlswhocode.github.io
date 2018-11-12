@@ -1,76 +1,37 @@
 <html>
   <head>
-    <script src="coffee.js"></script>
     <script src="myFunctions.js"></script>
     <link rel="stylesheet" type="text/css" href="all.css">
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {box-sizing: border-box}
-/* Set height of body and the document to 100% */
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Advent Pro;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* Style tab links */
-.tablink {
-    background-color: #555;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 25%;
-}
+  </head>
 
-.tablink:hover {
-    background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-}
-    
-
-#Home {background-color: tomato;}
-#News {background-color: green;}
-#Contact {background-color: steelblue;}
-#About {background-color: orange;}
-</style>
-</head>
 <body>
-<button class="tablink" onclick="openPage('Home', this, 'tomato')"id="defaultOpen">All</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" >Quiz</button>
-<button class="tablink" onclick="openPage('Contact', this, 'steelblue')">Ingredients</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">Contribute/Lessons</button>
+<button class="tablink" onclick="openPage('All', this, 'tomato')" id="defaultOpen">All</button>
+<button class="tablink" onclick="openPage('Quiz', this, 'green')" >Quiz</button>
+<button class="tablink" onclick="openPage('Ingredients', this, 'steelblue')">Ingredients</button>
+<button class="tablink" onclick="openPage('Lessons', this, 'orange')">Contribute/Lessons</button>
 </body>
 
-<div id="Home" class="tabcontent">
+<div id="All" class="tabcontent">
   <h3>Recipe Categories</h3>
    <div>
-      <button class="pie" onclick="pie()">Pie</button>
-      <button class="pasta" onclick="pasta()">Pasta</button>
-      <button class="sandwiches" onclick="sandwiches()">Sandwiches</button>
+      <button id="pie" onclick="openCat(id)">Pie</button>
+      <button id="pasta" onclick="openCat(id)">Pasta</button>
+      <button id="sandwiches" onclick="openCat(id)">Sandwiches</button>
     </div>
 </div>
 
- <div id="News" class="tabcontent">
+ <div id="Quiz" class="tabcontent">
   <h3>Quiz</h3>
 </div>
 
-<div id="Contact" class="tabcontent">
+<div id="Ingredients" class="tabcontent">
   <h3>Ingredient Search</h3>
 </div>
 
-<div id="About" class="tabcontent">
+<div id="Lessons" class="tabcontent">
   <h3>Contribute/lessons</h3>
 </div>
 
