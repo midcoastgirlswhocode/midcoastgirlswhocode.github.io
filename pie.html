@@ -1,9 +1,10 @@
 <html>
 <head>
+  <script type="text/javascript" src=myFunctions.js></script>
+
  <link rel= "stylesheet" type="text/css" href="pie.css">
  <link rel="stylesheet" type="text/css" href="recipes.css">
  <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
- <script src="pie.js"></script>
  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -12,53 +13,67 @@
 <p>Click on the tabs to get your pie recpie</p>
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Pecan Pie</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Strawberry Rhubarb</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Apple Pie</button>
-  <button class="tablinks" onclick="openCity(event, 'Berlin')">Pumpkin Pie</button>
+  <button class="tablinks" onclick="openTab(event, 'Pecan Pie')" id="defaultOpen">Pecan Pie</button>
+  <button class="tablinks" onclick="openTab(event, 'Strawberry Rhubarb')">Strawberry Rhubarb</button>
+  <button class="tablinks" onclick="openTab(event, 'Apple Pie')">Apple Pie</button>
+  <button class="tablinks" onclick="openTab(event, 'Pumpkin Pie')">Pumpkin Pie</button>
+
 
 </div>
 
-<div id="London" class="tabcontent">
+<div id="Pecan Pie" class="tabcontent">
   <h3>Pecan Pie</h3>
-  <p>1 1/2 cups pecan pieces.<br>3 large eggs.<br> 1 cup sugar.<br>3/4 cup light or dark corn syrup.<br>2 tablespoons melted butter.<br>2 teaspoons vanilla extract.<br>1/2 teaspoon salt.<br>1 (9-inch) deep-dish frozen unbaked pie shell.
+  <p>1 1/2 cups pecan pieces.
+    <br>3 large eggs.
+    <br> 1 cup sugar.
+    <br>3/4 cup light or dark corn syrup.
+    <br>2 tablespoons melted butter.
+    <br>2 teaspoons vanilla extract.
+    <br>1/2 teaspoon salt.<br>1 (9-inch) deep-dish frozen unbaked pie shell.
 </p>
 </div>
 
-<div id="Paris" class="tabcontent">
+<div id="Strawberry Rhubarb" class="tabcontent">
   <h3>Strawberry Rhubarb</h3>
-  <p>Preheat oven to 400 degrees F (200 degrees C).<br>In a large bowl, mix flour and sugar.<br> Add strawberries and chopped rhubarb<br>Pour filling into pie crust<br>Apply yolk to top of pie, using a pastry brush<br>Bake at 400 degrees F (200 degrees C), for 35 to 40 minutes, or until bubbly and brown.
+
+  <p>Preheat oven to 400 degrees F (200 degrees C).
+    <br>In a large bowl, mix flour and sugar.
+    <br> Add strawberries and chopped rhubarb
+    <br>Pour filling into pie crust
+    <br>Apply yolk to top of pie, using a pastry brush
+    <br>Bake at 400 degrees F (200 degrees C), for 35 to 40 minutes, or until bubbly and brown.
+
 </p>
 </div>
 
-<div id="Tokyo" class="tabcontent">
+<div id="Apple Pie" class="tabcontent">
   <h3>Apple Pie</h3>
-  <p>2 tablespoons freshly squeezed lemon juice.<br>3 pounds baking apples like <br> Golden Delicious, Cortland, or Mutsu.<br>2/3 cup sugar, plus more for sprinkling on the pie.<br>1/4 cup unsalted butter.<br>1/4 teaspoon ground cinnamon.<br>Generous pinch of ground nutmeg.<br>1 large egg, lightly beaten.
+  <p>2 tablespoons freshly squeezed lemon juice.
+    <br>3 pounds baking apples like
+    <br> Golden Delicious, Cortland, or Mutsu.
+    <br>2/3 cup sugar, plus more for sprinkling on the pie.
+    <br>1/4 cup unsalted butter.
+    <br>1/4 teaspoon ground cinnamon.
+    <br>Generous pinch of ground nutmeg.
+    <br>1 large egg, lightly beaten.
 </p>
 </div>
 
-<div id="Berlin" class="tabcontent">
+<div id="Pumpkin Pie" class="tabcontent">
   <h3>Pumpkin Pie</h3>
-  <p>1 (12 fluid ounce) can evaporated milk.<br>2 eggs, beaten.<br>3/4 cup packed brown sugar.<br>1/2 teaspoon ground cinnamon.<br>1/2 teaspoon ground ginger.<br>1/2 teaspoon ground nutmeg.<br>1/2 teaspoon salt.<br>2 cups of pumpkin
+  <p>1 (12 fluid ounce) can evaporated milk.
+    <br>2 eggs, beaten.
+    <br>3/4 cup packed brown sugar.
+    <br>1/2 teaspoon ground cinnamon.
+    <br>1/2 teaspoon ground ginger.
+    <br>1/2 teaspoon ground nutmeg.
+    <br>1/2 teaspoon salt.
+    <br>2 cups of pumpkin
 </p>
 </div>
 
 
 <script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
