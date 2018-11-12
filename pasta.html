@@ -1,66 +1,74 @@
 <html>
-<head>
-
-  <script type="text/javascript" src=myFunctions.js></script>
-    <link rel="stylesheet" type="text/css" href="pasta.css">
-    <link rel="stylesheet" type="text/css" href="recipes.css">
-    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <script type="text/javascript" src="myFunctions.js"></script>
+    <link rel="stylesheet" type="text/css" href="pasta.css" />
+    <link rel="stylesheet" type="text/css" href="recipes.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Advent Pro"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-<body>
+  <body>
+    <h2>Pastas</h2>
+    <p>Click on the buttons to view recipies</p>
 
-<h2>Pasta dishes</h2>
-<p>Click on the buttons to view recipies</p>
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="openTab(event, 'Baked Ziti')"
+        id="defaultOpen"
+      >
+        Baked Ziti
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Lasagna')">
+        Lasagna
+      </button>
+      <button class="tablinks" onclick="openTab(event, 'Macaroni & Cheese')">
+        Macaroni & Cheese
+      </button>
+    </div>
 
-<div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Baked Ziti')" id="defaultOpen">Baked Ziti</button>
-  <button class="tablinks" onclick="openTab(event, 'Lasagna')">Lasagna</button>
-  <button class="tablinks" onclick="openTab(event, 'Macaroni & Cheese')">Macaroni & Cheese </button>
-</div>
+    <div id="Baked Ziti" class="tabcontent">
+      <h3>Baked Ziti</h3>
+      <p>
+        1)Preheat the oven to 350 degrees F . <br />
+        2) Butter a 9x13 inch baking dish. <br />
+        3) Layer as follows: <br />
+        1/2 of the ziti <br />
+        Provolone cheese <br />
+        sour cream <br />
+        1/2 sauce mixture <br />
+        remaining ziti <br />
+        mozzarella cheese <br />Remaining sauce mixture <br />
+        Top with grated Parmesan cheese.
+      </p>
+    </div>
 
-<div id="Baked Ziti" class="tabcontent">
-  <h3>Baked Ziti</h3>
-  <p> 1)Preheat the oven to 350 degrees F .
-    <br> 2) Butter a 9x13 inch baking dish.
-    <br> 3) Layer as follows:
-    <br> 1/2 of the ziti
-    <br> Provolone cheese
-    <br> sour cream
-    <br> 1/2 sauce mixture
-    <br> remaining ziti
-    <br> mozzarella cheese
-    <br>Remaining sauce mixture
-    <br> Top with grated Parmesan cheese.</p>
-</div>
+    <div id="Lasagna" class="tabcontent">
+      <h3>Lasagna</h3>
+      <p>
+        1 pound lean ground beef. <br />
+        4 cups tomato-basil pasta sauce. <br />6 uncooked lasagna noodles.
+        <br />1 (15-ounce) container ricotta cheese. <br />2 1/2 cups (10
+        ounces) shredded mozzarella cheese. <br />1/4 cup hot water.
+      </p>
+    </div>
 
-<div id="Lasagna" class="tabcontent">
-  <h3>Lasagna</h3>
-  <p>1 pound lean ground beef.
-    <br> 4 cups tomato-basil pasta sauce.
-    <br>6 uncooked lasagna noodles.
-    <br>1 (15-ounce) container ricotta cheese.
-    <br>2 1/2 cups (10 ounces) shredded mozzarella cheese.
-    <br>1/4 cup hot water.</p>
+    <div id="Macaroni & Cheese" class="tabcontent">
+      <h3>Macaroni & cheese</h3>
+      <p>
+        1 (8-oz.) package elbow macaroni. <br />2 tablespoons butter. <br />2
+        tablespoons all-purpose flour. <br />2 cups milk. <br />1/2 teaspoon
+        salt. <br />1/2 teaspoon fresh ground black pepper. <br />1/4 teaspoon
+        ground red pepper. <br />1 (8-oz.) block sharp Cheddar cheese, shredded
+        and divided.
+      </p>
+    </div>
 
-</div>
-
-<div id="Macaroni & Cheese" class="tabcontent">
-  <h3>Macaroni & cheese</h3>
-  <p>1 (8-oz.) package elbow macaroni.
-    <br>2 tablespoons butter.
-    <br>2 tablespoons all-purpose flour.
-    <br>2 cups milk.
-    <br>1/2 teaspoon salt.
-    <br>1/2 teaspoon fresh ground black pepper.
-    <br>1/4 teaspoon ground red pepper.
-    <br>1 (8-oz.) block sharp Cheddar cheese, shredded and divided.
-  </p>
-</div>
-
-<script>
-document.getElementById("defaultOpen").click();
-</script>
-
-</body>
+    <script>
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
 </html>
