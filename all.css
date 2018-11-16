@@ -49,6 +49,7 @@ body, html {
 #Quiz {background-color: green;}
 #Ingredients {background-color: steelblue;}
 #Lessons {background-color: orange;}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
