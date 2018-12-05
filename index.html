@@ -40,7 +40,33 @@
     </div>
   </div>
 
-  <div id="Quiz" class="tabcontent"><h3>Quiz</h3></div>
+
+<div id="Lessons" class="tabcontent">
+
+    <h3>Contribute/lessons</h3>
+  <div class="container">
+  <form action="action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email..">
+
+    <label for="category">Category</label>
+    <select id="category" name="category">
+      <option value="contribution">Recipe contribution</option>
+      <option value="comments">Other comments</option>
+    </select>
+
+    <label for="subject">Comment/Contribution</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</div>
+
 
   <div id="Ingredients" class="tabcontent"><h3>Ingredient Search</h3></div>
 
