@@ -14,7 +14,7 @@ button {
 * {box-sizing: border-box}
 /* Set height of body and the document to 100% */
 body, html {
-    height: 100%;
+    height: 150%;
     margin: 0;
     font-family: Advent Pro;
 }
@@ -29,7 +29,7 @@ body, html {
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    width: 25%;
+    width: 20%;
 }
 
 .tablink:hover {
@@ -38,7 +38,7 @@ body, html {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-    color: white; /*font color for each page*/
+    color: black; /*font color for each page*/
     display: none;
     padding: 100px 20px;
     height: 100%;
@@ -48,13 +48,14 @@ body, html {
 #All {background-color: tomato;}
 #Quiz {background-color: green;}
 #Ingredients {background-color: steelblue;}
-#Lessons {background-color: orange;}
+#Lessons {background-color: #FFB6C1;}
+#Contribute {background-color: orange;}
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
+    border: 1px solid #ccd; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -64,7 +65,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: orange;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -74,7 +75,7 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: yellow;
+    background-color: brown;
 }
 
 /* Add a background color and some padding around the form */
