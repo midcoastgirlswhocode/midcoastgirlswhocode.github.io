@@ -1,47 +1,37 @@
 <html>
   <head>
     <script src="myFunctions.js"></script>
-    <script src="coffee.js"></script>
-    <link rel="stylesheet" type="text/css" href="all.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Advent Pro"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="contactForm.js"></script>
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
 
-  <body>
-    <button
-      class="tablink"
-      onclick="openPage('All', this, 'tomato')"
-      id="defaultOpen"
-    >
-      All
-    </button>
-    <button class="tablink" onclick="openPage('Quiz', this, 'green')">
-      Quiz
-    </button>
-    <button
-      class="tablink"
-      onclick="openPage('Ingredients', this, 'steelblue')"
-    >
-      Ingredients
-    </button>
-    <button class="tablink" onclick="openPage('Lessons', this, 'orange')">
-      Contribute/Lessons
-    </button>
-  </body>
+<body>
+<button class="tablink" onclick="openPage('All', this, 'tomato')" id="defaultOpen">All</button>
+<button class="tablink" onclick="openPage('Quiz', this, 'green')" >Quiz</button>
+<button class="tablink" onclick="openPage('Ingredients', this, 'steelblue')">Ingredients</button>
+<button class="tablink" onclick="openPage('Lessons', this, 'FFB6C1')">Cooking Lessons in Maine</button>
+<button class="tablink" onclick="openPage('Contribute', this, 'orange')">Contribute/Contact</button>
+</body>
 
-  <div id="All" class="tabcontent">
-    <h3>Recipe Categories</h3>
-    <div>
-      <button id="pie" onclick="pie()">Pie</button>
-      <button id="pasta" onclick="cake()">Cake</button>
-      <button id="sandwiches" onclick="sandwiches()">Sandwiches</button>
+<div id="All" class="tabcontent">
+  <h3>Recipe Categories</h3>
+   <div>
+      <button id="pie" onclick="openCat(id)">Pie</button>
+      <button id="pasta" onclick="openCat(id)">Pasta</button>
+      <button id="sandwiches" onclick="openCat(id)">Sandwiches</button>
     </div>
-  </div>
+</div>
 
-  <div id="Quiz" class="tabcontent"><h3>Quiz</h3></div>
+ <div id="Quiz" class="tabcontent">
+  <h3>Quiz</h3>
+</div>
+
+<div id="Ingredients" class="tabcontent">
+  <h3>Ingredient Search</h3>
+</div>
 
 <div id="Lessons" class="tabcontent">
   <h3>Cooking Lessons in Maine</h3>
@@ -72,15 +62,19 @@
   <h3>Contribute/Contact</h3>
 
   <div class="container">
-  <form action="action_page.php" method="POST">
+  <form id = "contact" action="" method="POST">
     <label for="name">Name</label>
+    <fieldset>
     <input type="text" id="name" name="name" required="true" placeholder="Your name.." class="input-field" />
 
     <label for="email">Email</label>
     <input type="text" id="email" name="email" required="true" placeholder="Your email.." class="input-field" />
 
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email.." />
+    <label for="category">Category</label>
+    <select id="category" name="category">
+      <option value="contribution">Recipe contribution</option>
+      <option value="comments">Other comments</option>
+    </select>
 
     <label for="message">Comment/Contribution</label>
     <textarea id="message" name="message" placeholder="Please contribute a recipe, or write down any questions and comments. Thank you for your contribution!" style="height:200px" required="true"></textarea>
@@ -96,7 +90,4 @@
 document.getElementById("defaultOpen").click();
 </script>
 
-  <script>
-    document.getElementById("defaultOpen").click();
-  </script>
 </html>
