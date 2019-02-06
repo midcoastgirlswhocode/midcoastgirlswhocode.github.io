@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<script type="text/javascript" src=myFunctions.js></script>
+	<script type="text/javascript" src=coffee.js></script>
+	<link rel="stylesheet" type="text/css" href="pie.css">
+	<link rel="stylesheet" type="text/css" href="recipes.css">
+	<link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<h2>Cookies</h2>
+	<p>Click on the tabs to get your pie recpie</p>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Chocolate Brownies')" id="defaultOpen">Chocolate Brownies</button>
+  	<button class="tablinks" onclick="openTab(event, 'gingerbread cookies')">Gingerbread Cookies</button>
+		<button class="tablinks" onclick="openTab(event, 'Peanut Butter Fingers')">Peanut Butter Finger Cookies</button>
+		<button class="tablinks" onclick="openTab(event, 'Pecan Chocolate Chip Cookies')">Pecan Chocolate Chip Cookies</button>
+		<button class="tablinks" onclick="openTab(event, 'Raisin Drop Cookies')"> Raisin Drop Cookies</button>
+</div>
+<div id="Chocolate Brownies" class="tabcontent">
+	<body>
+		<object width="100%" height="500px" data="recipe_htmls/cookies/chocolatebrownies.html"></object>
+    </div>
+	<div id="gingerbread cookies" class="tabcontent">
+		<body>
+			<object width="100%" height="500px" data="recipe_htmls/cookies/gingerbread.html"></object>
+	    </div>
+	<div id="Peanut Butter Fingers" class="tabcontent">
+				<body>
+					<object width="100%" height="500px" data="recipe_htmls/cookies/peanutbutterfingers.html"></object>
+			    </div>
+	 <div id="Pecan Chocolate Chip Cookies" class="tabcontent">		
+				<body>
+						<object width="100%" height="500px" data="recipe_htmls/cookies/pecanchocolatemaxi.html"></object>
+					  </div>
+		<div id="Raisin Drop Cookies" class="tabcontent">			
+				 <body>
+						<object width="100%" height="500px" data="recipe_htmls/cookies/raisindropcookies.html"></object>
+						</div>
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

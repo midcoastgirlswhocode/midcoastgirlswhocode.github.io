@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<script type="text/javascript" src=myFunctions.js>
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="pie.css">
+	<link rel="stylesheet" type="text/css" href="recipes.css">
+	<link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<h2>Dressings and Vegtables</h2>
+	<p>Click on the tabs to get your recpies</p>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Cole Slaw Dressing')" id="defaultOpen">Cole Slaw Dressing</button>
+    <button class="tablinks" onclick="openTab(event, 'Rice and Broccoli')">Rice and Broccoli</button>
+	<button class="tablinks" onclick="openTab(event, 'Salad Dressing')">Salad Dressing</button>
+<button class="tablinks" onclick="openTab(event, 'Zesty Shrimp Salad')">Zesty Shrimp Salad</button>
+</div>
+
+<div id="Cole Slaw Dressing" class="tabcontent">
+	<body>
+		<object width="100%" height="500px" data="recipe_htmls/dressings_and_vegetables/coleslawdressing.html"></object>
+    </div>
+	<div id="Rice and Broccoli" class="tabcontent">
+		<body>
+			<object width="100%" height="500px" data="recipe_htmls/dressings_and_vegetables/riceandbroccoli.html"></object>
+	    </div>
+<div id="Salad Dressing" class="tabcontent">
+	<body>
+		<object width="100%" height="500px" data="recipe_htmls/dressings_and_vegetables/salad_dressing.html"></object>
+    </div>
+	<div id="Zesty Shrimp Salad" class="tabcontent">
+		<body>
+			<object width="100%" height="500px" data="recipe_htmls/dressings_and_vegetables/zestyshrimpsalad.html"></object>
+	    </div>
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
