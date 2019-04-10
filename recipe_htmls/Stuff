@@ -1,0 +1,100 @@
+<li>
+      <a href="#"onclick="openCat('recipe_htmls/dressings_and_salads/antipasto_salad.html')">Antipasto Salad</a>
+    </li>
+
+    <li>
+      <a href="#" onclick="openCat('recipe_htmls/cake/applecake')">
+        Apple Cake</a
+      >
+    </li>
+
+    <li><a href="#">Apple Lemon Cake</a></li>
+
+    <li><a href="#">Apple Pie</a></li>
+
+    <li><a href="#">Baked Indian Pudding</a></li>
+
+    <li><a href="#">Blueberry Cake</a></li>
+
+    <li><a href="#">Blueberry Muffins</a></li>
+
+    <li><a href="#">Caesar Salad</a></li>
+
+    <li><a href="#">California Walnut Pie</a></li>
+
+    <li><a href="#">Chiffon Cake</a></li>
+
+    <li><a href="#">Chocolate Brownies</a></li>
+
+    <li><a href="#">Chocolate Cake</a></li>
+
+    <li><a href="#">Classic Rice Crispy Treats</a></li>
+
+    <li><a href="#">Cole Slaw Dressing</a></li>
+
+    <li><a href="#">Cranberry Fruit Nut Bread</a></li>
+
+    <li><a href="#">Gingerbread Cookies</a></li>
+
+    <li><a href="#">Haddock Casserole</a></li>
+
+    <li><a href="#">Household Tips</a></li>
+
+    <li><a href="#">Lemon Bars</a></li>
+
+    <li><a href="#">Macaroni and Cheese</a></li>
+
+    <li><a href="#">Mince Meat</a></li>
+
+    <li><a href="#">Peanut Butter Fingers</a></li>
+
+    <li><a href="#">Pecan Chocolate Maxi's</a></li>
+
+    <li><a href="#">Pickled Eggs</a></li>
+
+    <li><a href="#">Pie Crust</a></li>
+
+    <li><a href="#">Potatoe Salad</a></li>
+
+    <li><a href="#">Pound Cake</a></li>
+
+    <li><a href="#">Poultry Seasoning</a></li>
+
+    <li><a href="#">Pumpkin Pie Spice</a></li>
+
+    <li><a href="#">Raisin Cake</a></li>
+
+    <li><a href="#">Raisin Drop Cookies</a></li>
+
+    <li><a href="#">Rice Salad Provencale</a></li>
+
+    <li><a href="#">Rice and Broccoli</a></li>
+
+    <li><a href="#">Roasted Pumpkin Seeds</a></li>
+
+    <li><a href="#">Salad Dressing</a></li>
+
+    <li><a href="#">Scalloped Scallops</a></li>
+
+    <li><a href="#">Seafood Casserole</a></li>
+
+    <li><a href="#">Sea Leg Casserole</a></li>
+
+    <li><a href="#">Sheath Cake</a></li>
+
+    <li><a href="#">Silver White Cake</a></li>
+
+    <li><a href="#">Sliced Egg</a></li>
+
+    <li><a href="#">Soft Custard</a></li>
+
+    <li><a href="#">Supper Potatoes</a></li>
+
+    <li><a href="#">Vanilla Cupcakes</a></li>
+
+    <li><a href="#">Vanilla Pudding Cake</a></li>
+
+    <li><a href="#">Whoopie Pies</a></li>
+
+    <li><a href="#">Zesty Shrimp Salad</a></li>
+  </ul>
