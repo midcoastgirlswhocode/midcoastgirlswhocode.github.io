@@ -1,158 +1,176 @@
 <html>
-  <input
-    type="text"
-    id="myInput"
-    onkeyup="myFunction()"
-    placeholder="Search for names.."
-  />
-
-  <ul id="myUL">
-    <li><a href="#">Antipasto Salad</a></li>
-
-    <li><a href="#">Apple Cake</a></li>
-
-    <li><a href="#">Apple Lemon Cake</a></li>
-
-    <li><a href="#">Apple Pie</a></li>
-
-    <li><a href="#">Baked Indian Pudding</a></li>
-
-    <li><a href="#">Blueberry Cake</a></li>
-
-    <li><a href="#">Blueberry Muffins</a></li>
-
-    <li><a href="#">Caesar Salad</a></li>
-
-    <li><a href="#">California Walnut Pie</a></li>
-
-    <li><a href="#">Chiffon Cake</a></li>
-
-    <li><a href="#">Chocolate Brownies</a></li>
-
-    <li><a href="#">Chocolate Cake</a></li>
-
-    <li><a href="#">Classic Rice Crispy Treats</a></li>
-
-    <li><a href="#">Cole Slaw Dressing</a></li>
-
-    <li><a href="#">Cranberry Fruit Nut Bread</a></li>
-
-    <li><a href="#">Gingerbread Cookies</a></li>
-
-    <li><a href="#">Haddock Casserole</a></li>
-
-    <li><a href="#">Household Tips</a></li>
-
-    <li><a href="#">Lemon Bars</a></li>
-
-    <li><a href="#">Macaroni and Cheese</a></li>
-
-    <li><a href="#">Mince Meat</a></li>
-
-    <li><a href="#">Peanut Butter Fingers</a></li>
-
-    <li><a href="#">Pecan Chocolate Maxi's</a></li>
-
-    <li><a href="#">Pickled Eggs</a></li>
-
-    <li><a href="#">Pie Crust</a></li>
-
-    <li><a href="#">Potatoe Salad</a></li>
-
-    <li><a href="#">Pound Cake</a></li>
-
-    <li><a href="#">Poultry Seasoning</a></li>
-
-    <li><a href="#">Pumpkin Pie Spice</a></li>
-
-    <li><a href="#">Raisin Cake</a></li>
-
-    <li><a href="#">Raisin Drop Cookies</a></li>
-
-    <li><a href="#">Rice Salad Provencale</a></li>
-
-    <li><a href="#">Rice and Broccoli</a></li>
-
-    <li><a href="#">Roasted Pumpkin Seeds</a></li>
-
-    <li><a href="#">Salad Dressing</a></li>
-
-    <li><a href="#">Scalloped Scallops</a></li>
-
-    <li><a href="#">Seafood Casserole</a></li>
-
-    <li><a href="#">Sea Leg Casserole</a></li>
-
-    <li><a href="#">Sheath Cake</a></li>
-
-    <li><a href="#">Silver White Cake</a></li>
-
-    <li><a href="#">Sliced Egg</a></li>
-
-    <li><a href="#">Soft Custard</a></li>
-
-    <li><a href="#">Supper Potatoes</a></li>
-
-    <li><a href="#">Vanilla Cupcakes</a></li>
-
-    <li><a href="#">Vanilla Pudding Cake</a></li>
-
-    <li><a href="#">Whoopie Pies</a></li>
-
-    <li><a href="#">Zesty Shrimp Salad</a></li>
-  </ul>
-</html>
-<style>
-  #myInput {
-    background-image: url("/css/searchicon.png"); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  #myUL {
-    /* Remove default list styling */
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-</style>
-<script>
-  function myFunction() {
-    // Declare variables
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-      a = li[i].getElementsByTagName("a")[0];
-      txtValue = a.textContent || a.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        li[i].style.display = "";
-      } else {
-        li[i].style.display = "none";
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
       }
+
+      #myInput {
+        background-image: url("/css/searchicon.png");
+        background-position: 10px 12px;
+        background-repeat: no-repeat;
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+      }
+
+      #myUL {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      #myUL li a {
+        border: 1px solid #ddd;
+        margin-top: -1px; /* Prevent double borders */
+        background-color: #f6f6f6;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block;
+      }
+
+      #myUL li a:hover:not(.header) {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for names.."
+      title="Type in a name"
+    />
+
+    <ul id="myUL">
+      <li>
+        <a href="#"
+         onclick="openCat('recipe_htmls/dressings_and_salads/antipasto_salad')">Antipasto Salad</a> 
+      </li>
+
+      <li>
+        <a href="#" onclick="openCat('recipe_htmls/cake/applecake')">
+          Apple Cake</a
+        >
+      </li>
+
+      <li><a href="#" onclick="openCat('recipe_htmls/cake/applelemoncake')">Apple Lemon Cake</a></li>
+
+      <li><a href="#" onclick="openCat('recipe_htmls/Pies/apple_pie')">Apple Pie</a></li>
+
+      <li><a href="#"onclick="openCat('recipe_htmls/puddingandcustards/baked_indian_pudding')">Baked Indian Pudding</a></li>
+
+      <li><a href="#" onclick="openCat('recipe_htmls/cake/blueberrycake')">Blueberry Cake</a></li>
+
+      <li><a href="#">Blueberry Muffins</a></li>
+
+      <li><a href="#">Caesar Salad</a></li>
+
+      <li><a href="#">California Walnut Pie</a></li>
+
+      <li><a href="#">Chiffon Cake</a></li>
+
+      <li><a href="#">Chocolate Brownies</a></li>
+
+      <li><a href="#">Chocolate Cake</a></li>
+
+      <li><a href="#">Classic Rice Crispy Treats</a></li>
+
+      <li><a href="#">Cole Slaw Dressing</a></li>
+
+      <li><a href="#">Cranberry Fruit Nut Bread</a></li>
+
+      <li><a href="#">Gingerbread Cookies</a></li>
+
+      <li><a href="#">Haddock Casserole</a></li>
+
+      <li><a href="#">Household Tips</a></li>
+
+      <li><a href="#">Lemon Bars</a></li>
+
+      <li><a href="#">Macaroni and Cheese</a></li>
+
+      <li><a href="#">Mince Meat</a></li>
+
+      <li><a href="#">Peanut Butter Fingers</a></li>
+
+      <li><a href="#">Pecan Chocolate Maxi's</a></li>
+
+      <li><a href="#">Pickled Eggs</a></li>
+
+      <li><a href="#">Pie Crust</a></li>
+
+      <li><a href="#">Potatoe Salad</a></li>
+
+      <li><a href="#">Pound Cake</a></li>
+
+      <li><a href="#">Poultry Seasoning</a></li>
+
+      <li><a href="#">Pumpkin Pie Spice</a></li>
+
+      <li><a href="#">Raisin Cake</a></li>
+
+      <li><a href="#">Raisin Drop Cookies</a></li>
+
+      <li><a href="#">Rice Salad Provencale</a></li>
+
+      <li><a href="#">Rice and Broccoli</a></li>
+
+      <li><a href="#">Roasted Pumpkin Seeds</a></li>
+
+      <li><a href="#">Salad Dressing</a></li>
+
+      <li><a href="#">Scalloped Scallops</a></li>
+
+      <li><a href="#">Seafood Casserole</a></li>
+
+      <li><a href="#">Sea Leg Casserole</a></li>
+
+      <li><a href="#">Sheath Cake</a></li>
+
+      <li><a href="#">Silver White Cake</a></li>
+
+      <li><a href="#">Sliced Egg</a></li>
+
+      <li><a href="#">Soft Custard</a></li>
+
+      <li><a href="#">Supper Potatoes</a></li>
+
+      <li><a href="#">Vanilla Cupcakes</a></li>
+
+      <li><a href="#">Vanilla Pudding Cake</a></li>
+
+      <li><a href="#">Whoopie Pies</a></li>
+
+      <li><a href="#">Zesty Shrimp Salad</a></li>
+    </ul>
+
+    <script>
+      function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    function openCat(id) {
+        window.location.href = id + ".html";
     }
-  }
-</script>
+    </script>
+  </body>
+</html>
