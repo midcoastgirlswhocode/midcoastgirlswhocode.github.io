@@ -1,0 +1,26 @@
+<html>
+  <head> </head>
+
+  <body>
+    <div id="Rice Crispies">
+      <h2>Rice Crispie Treats</h2>
+
+      <h3>Ingredients</h3>
+      <p>
+        <br />
+        40 Marshmallows (about 4 cups) <br />
+        1/4 cup margarine <br />
+        6 cups Rice Crispies
+      </p>
+      <h3>Instructions</h3>
+      <p>
+        1) Melt marchmallows with margarine in large saucepan over low heat,
+        stirring until completely melted. <br />
+        2) Add rice crispies, stir until well coated <br />
+        3) Using a greased spatula or waxed paper, press mixture evenly into
+        greased 13x9 pan and let cool. <br />
+        4) Cut into squares when cool.
+      </p>
+    </div>
+  </body>
+</html>

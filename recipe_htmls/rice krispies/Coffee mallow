@@ -1,0 +1,24 @@
+<html>
+  <head> </head>
+
+  <body>
+    <div id="Coffee Mallow">
+      <h2>Coffee Mallow</h2>
+
+      <h3>Ingredients</h3>
+      <p>
+        <br />
+        16 marshmallows cut into quarters<br />
+        1/2 cup strong coffee <br />
+        1 cup whipped cream
+        1/2 tsp vanilla
+      </p>
+      <h3>Instructions</h3>
+      <p>
+        1) Put marshmallows in double boiler with coffee and let melt <br />
+        2) Fold in whipped cream and vanilla <br />
+        3) chill <br />
+      </p>
+    </div>
+  </body>
+</html>

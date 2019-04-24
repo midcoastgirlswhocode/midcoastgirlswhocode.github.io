@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<script type="text/javascript" src=myFunctions.js>
+	</script>
+	<link rel="stylesheet" type="text/css" href="pie.css">
+	<link rel="stylesheet" type="text/css" href="recipes.css">
+	<link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+	<h2>Breakfast Foods</h2>
+	<p>Click on the tabs to get your recpies</p>
+
+	<div class="tab">
+		<button class="tablinks" onclick="openTab(event, 'Cranberry Fruit Nut Bread')" id="defaultOpen">Cranberry Fruit Nut Bread</button>
+  <button class="tablinks" onclick="openTab(event, 'Blueberry Muffins')">Blueberry Muffins</button>
+</div>
+
+<div id="Cranberry Fruit Nut Bread" class="tabcontent">
+	<body>
+		<object width="100%" height="500px" data="recipe_htmls/breakfastfoods/cranberry_fruit_nut_bread.html"></object>
+    </div>
+	<div id="Blueberry Muffins" class="tabcontent">
+		<body>
+			<object width="100%" height="500px" data="recipe_htmls/breakfastfoods/blueberry_muffins.html"></object>
+	    </div>
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>
