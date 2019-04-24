@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="all.css" />
 	<link href='https://fonts.googleapis.com/css?family=Alice' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-</body>
+</head>
 
   <body>
     <button
@@ -17,7 +17,8 @@
       All
     </button>
     <button class="tablink" onclick="openPage('Quiz', this, 'green')">
-      Quiz</button>
+      Quiz
+    </button>
     <button
       class="tablink"
       onclick="openPage('Ingredients', this, 'steelblue')"
@@ -33,6 +34,8 @@
     <button class="tablink" onclick="openPage('Contribute', this, 'orange')">
       Contribute
     </button>
+  </body>
+
   <div id="All" class="tabcontent">
     <h3>Recipe Categories</h3>
     <div>
@@ -48,19 +51,6 @@
       <button id="jello" onclick="call_itempage('jello.html')">Jello</button>
     </div>
   </div>
-  <div>
-    </body>
-      <button id="pie" onclick="call_itempage('pie.html')">Pie</button>
-      <button id="pasta" onclick="call_itempage('cake.html')">Cake</button>
-	    <button id="breakfastfoods" onclick="call_itempage('breakfastfoods.html')">Breakfast Foods</button>
-      <button id="cookies" onclick="call_itempage('cookies.html')">Cookies</button>
-      <button id="dressings_and_salads" onclick="call_itempage('dressings_and_salads.html')">Dressings and Vegetables</button>
-      <button id="puddings_and_custards" onclick="call_itempage('puddingsandcustards')">Puddings and Custards</button>
-      <button id="random_tips" onclick="call_itempage('randomtips.html')">Random Tips</button>
-      <button id="savory" onclick="call_itempage('savory.html')">Savory</button>
-      <button id="bread" onclick="call_itempage('bread.html')">Bread</button>
-      <button id="jello" onclick="call_itempage('jello.html')">Jello</button>
-    </div>
 
   <div id="Quiz" class="tabcontent"><h3>Quiz</h3></div>
   <div id="Ingredients" class="tabcontent">
@@ -70,13 +60,13 @@
 
   <div id="Animations" class="tabcontent"></div>
 
-<div id="Lessons" class="tabcontent"></div>
-
+<div id="Lessons" class="tabcontent">
+  <body>
   <object width="100%" height="500px" data="lessons.html"></object>
-
+</div>
 
 <div id="Contribute" class="tabcontent">
-  <h3>Contribute/Contact</h3></div>
+  <h3>Contribute/Contact</h3>
 
   <div class="container">
   <form action="action_page.php" method="POST">
@@ -92,32 +82,18 @@
     <label for="message">Comment/Contribution</label>
     <textarea id="message" name="message" placeholder="Please contribute a recipe, or write down any questions and comments. Thank you for your contribution!" style="height:200px" required="true"></textarea>
 
-    <input id="submit_btn" class="btn btn-submit" type="submit" value="Submit" ></input>
+    <input id="submit_btn" class="btn btn-submit" type="submit" value="Submit" >
+
     </form>
-    </div>
-    </div>
+  </div>
+</div>
 
 <script>
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();{}
-tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;{}
-
-function call_itempage(address) {
-  window.location.href = address;
-}
-    document.getElementById("defaultOpen").click();{
-    }
-function openPage(pageName, elmnt, color) {
-    var i, tabcontent, tablinks;
-}
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-    }
+document.getElementById("defaultOpen").click();
 </script>
+
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
 </html>
